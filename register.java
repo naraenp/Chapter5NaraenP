@@ -9,6 +9,11 @@ import java.util.Scanner;
 public class register{
     public static void main(String[] args){
         Scanner scan = new Scanner(System.in);
+        int choice = 1;
+        int ingnum = 1;
+        int moneyin = 1;
+        Pizza name = new Pizza(choice, ingnum, moneyin);
+        Pizza.registermenu();
         
         switch(choice){
             case 1:
@@ -24,16 +29,16 @@ public class register{
         
         
         System.out.println("Enter the client's name: ");
-        String name = scan.nextLine();
+        String namae = scan.nextLine();
         System.out.println("Enter the choice of pizza type: ");
         System.out.println("1 - Cheese\n2 - Pepperoni\n3 - Sausage\n4 - Eternal Void"); 
-        int choice = scan.nextInt();
+        int ptypae = scan.nextInt();
         System.out.println("How many ingredients?: ");
-        int ingnum = scan.nextInt();
-        System.out.println("How much money did the client give?:: ");
-        double moneyin = scan.nextDouble();
+        int ingnaum = scan.nextInt();
+        System.out.println("How much money did the client give?: ");
+        double monaeyin = scan.nextDouble();
         
-        Pizza name = new Pizza(choice, ingnum, moneyin);
         
+        //https://stackoverflow.com/questions/19961844/creating-multiple-objects-with-different-names-in-a-loop-to-store-in-an-array-li
     }
 }

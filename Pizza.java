@@ -14,6 +14,17 @@ public class Pizza{
         xd = n2;
     }
     
+    public static void registermenu(){
+        System.out.println("~~---REGISTER MENU---~~");
+        System.out.println("1. Enter Pizza Order");
+        System.out.println("2. Finish Pizza Order");
+        System.out.println("3. See Number of Pizzas Sold");
+        System.out.println("4. Total Sales");
+        System.out.println("5. Lock/Unlock");
+        System.out.println("6. Set Password");
+        System.out.println("7. Exit");
+    }
+    
     public int choicepricing;
 }
 
